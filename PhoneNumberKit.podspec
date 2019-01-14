@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PhoneNumberKit"
-  s.version          = "2.5.0"
+  s.version          = "2.5.0.1"
   s.summary          = "Swift framework for working with phone numbers"
 
 # This description is used to generate tags and improve search results.
@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Roy Marmelstein" => "marmelroy@gmail.com" }
-  s.source           = { :git => "https://github.com/marmelroy/PhoneNumberKit.git", :tag => s.version.to_s }
-  s.social_media_url   = "http://twitter.com/marmelroy"
+  s.source           = { :git => "https://github.com/rafaelnobrepd/PhoneNumberKit.git", :tag => s.version.to_s }
+  s.social_media_url   = "https://twitter.com/marmelroy"
 
 
   s.requires_arc = true
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  s.swift_version = '4.2'
 
   s.subspec 'PhoneNumberKitCore' do |core|
     core.ios.deployment_target = '8.0'
